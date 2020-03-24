@@ -1,0 +1,1 @@
+conda create -n py36_minimap2_samtools python=3.6.9 gooey minimap2 samtools -y
