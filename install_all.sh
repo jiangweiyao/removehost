@@ -12,7 +12,6 @@ conda config --add channels conda-forge
 . ~/.bashrc
 rm Miniconda3-latest-Linux-x86_64.sh
 
-
-wget ftp://ftp-trace.ncbi.nih.gov/1000genomes/ftp/technical/reference/human_g1k_v37.fasta.gz ~/remove/
+wget ftp://ftp-trace.ncbi.nih.gov/1000genomes/ftp/technical/reference/human_g1k_v37.fasta.gz -P ~/removehost/ 
 
 conda env create -f ~/removehost/environment.yml
