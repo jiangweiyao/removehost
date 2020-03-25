@@ -42,6 +42,12 @@ cd ~
 git clone https://github.com/jiangweiyao/removehost.git
 ```
 
+### Install Miniconda, Download human_g1k_v37, and build conda environment
+You can do all three things by using the following command. Then, you can skip the next 3 sections.
+```
+. ~/removehost/install_all.sh
+```
+
 ### Install Miniconda (if no Conda is install on system). 
 You can run the prepackaged script install_miniconda.sh to install into your home directory (recommended) by using the following command
 ```
