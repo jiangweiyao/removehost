@@ -109,7 +109,7 @@ CLI generic Usage
 When you are finished running the workflow, exit out of your environment by running `conda deactivate`. Deactivating your environment exits out of your current environment and protects it from being modified by other programs. You can build as many environments as you want and enter and exit out of them. Each environment is separate from each other to prevent version or dependency clashes. The author recommands using Conda/Bioconda to manage your dependencies.
 
 ## Reference Files
-The human_g1k_v37 reference file from NCBI is included with this repository. It was downloaded from: 
+The human_g1k_v37 reference file can be downloaded from: 
 ftp://ftp-trace.ncbi.nih.gov/1000genomes/ftp/technical/reference/human_g1k_v37.fasta.gz
 
 You can use any fasta or fasta.gz format reference file for this tool. 
