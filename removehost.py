@@ -14,8 +14,8 @@ def main():
 
     cli.add_argument('-t', '--threads', help="Number of threads. Default is 4. More is faster if your computer supports it", type=int, required=False, default=4)
     method = cli.add_mutually_exclusive_group()
-    method.add_argument('--Nanopore', action='store_const', dest='seq_method', const='map-ont', default='map-ont')
-    method.add_argument('--PacBio', action='store_const', dest='seq_method', const='map-pb')
+    method.add_argument('--Nanopore', help="Select if you used Nanopore Sequencing", action='store_const', dest='seq_method', const='map-ont', default='map-ont')
+    method.add_argument('--PacBio', help="Select if you used PacBio Sequencing", action='store_const', dest='seq_method', const='map-pb')
     args = cli.parse_args()
 
     files = glob.glob(args.InputFolder+"/*.fastq")

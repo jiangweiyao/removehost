@@ -10,7 +10,7 @@ from gooey import Gooey, GooeyParser
 
 def main():
     cli = GooeyParser(description="Remove Host Reads from Nanopore Fastq Files")
-    required_args = cli.add_argument_group("Input Output Location", gooey_options={'columns': 1})
+    required_args = cli.add_argument_group("Input Output", gooey_options={'columns': 1})
     required_args.add_argument('--InputFolder', help="Folder containing basecalled Nanopore fastq files. Only files ending in .fastq will be used", required=True, widget='DirChooser')
     required_args.add_argument('--Reference', help="Host Reference fasta or fasta.gz file", required=True, widget='FileChooser')
     required_args.add_argument('--OutputFolder', help="Output Folder", required=False, default='~/dehost_output/test')
@@ -19,8 +19,8 @@ def main():
     parser.add_argument('--threads', help="Number of threads. More is faster if your computer supports it", type=int, required=False, default=4)
 
     method = parser.add_mutually_exclusive_group()
-    method.add_argument('--Nanopore', action='store_true')
-    method.add_argument('--PacBio', action='store_true')
+    method.add_argument('--Nanopore', help = 'Data from Nanopore Sequencing', action='store_true')
+    method.add_argument('--PacBio', help = 'Data from PacBio Sequencing', action='store_true')
     args = cli.parse_args()
 
     if(args.Nanopore):
