@@ -33,7 +33,7 @@ sudo apt update
 sudo apt install git
 ```
 
-##Installation directions 
+## Installation directions 
 These instructions install the code into your home path. Change the instructions if appropriate. 
 
 ### Clone the code from repository
